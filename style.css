@@ -1,5 +1,5 @@
 body {
-  padding: 20% 5% 20% 5%;
+  padding: clamp(2rem, 10vh, 8rem) clamp(1rem, 5vw, 6rem);
   background-image: url(./images/background-pattern-mobile.svg);
   background-repeat: no-repeat;
   background-color: hsl(275, 100%, 97%);
@@ -24,7 +24,7 @@ header {
 }
 
 header > img {
-  height: 30px;
+  height: 1.875rem;
 }
 
 .questions {
@@ -58,9 +58,9 @@ p {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   body {
-    padding: 10% 20% 10% 20%;
+    padding: clamp(2rem, 10vh, 8rem) clamp(1rem, 8vw, 10rem);
     background-image: url(./images/background-pattern-desktop.svg);
     background-size: contain;
   }
