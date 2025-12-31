@@ -1,5 +1,4 @@
 const open = document.querySelectorAll(".plus");
-const paragraph = document.getElementById("answer");
 
 open.forEach((btn) => {
   btn.onclick = function showAnswer() {
@@ -13,8 +12,9 @@ open.forEach((btn) => {
     const parentDiv = btn.parentElement;
 
     // select the paragraph after the div
-    const paragraph = parentDiv.nextElementSibling;
+    const nextParagraph = parentDiv.nextElementSibling;
 
-    paragraph.classList.toggle("hidden");
+    nextParagraph.classList.toggle("hidden");
   };
+
 });
